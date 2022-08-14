@@ -1,6 +1,6 @@
 {
     // Editor global setup
-    "workbench.colorTheme": "Halcyon",
+    "workbench.colorTheme": "Nord",
     "workbench.startupEditor": "none",
     "editor.fontFamily": "SourceCodePro-regular",
     "editor.minimap.enabled": false,
@@ -21,7 +21,6 @@
     "go.coverOnSingleTestFile": true,
     "go.formatTool": "gofumpt",
     "go.toolsManagement.autoUpdate": true,
-    "go.lintOnSave": "workspace",
     "go.autocompleteUnimportedPackages": true,
     "gopls": {
         "formatting.gofumpt": true,
@@ -35,7 +34,6 @@
         "markdown": false,
         "env": false
     },
-
     "terraform.languageServer": {
         "external": true,
         "args": [
@@ -58,8 +56,31 @@
     },
     "turboConsoleLog.quote": "'",
     "cSpell.language": "en-GB",
-    "terminal.integrated.env.osx": {
-        "FIG_NEW_SESSION": "1"
+    "explorer.fileNesting.enabled": true,
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
-    "explorer.fileNesting.enabled": true
+    "terminal.external.osxExec": "Warp.app",
+    "git.mergeEditor": true,
+    "window.commandCenter": false,
+    "editor.renderWhitespace": "all",
+    "go.inlayHints.compositeLiteralFields": false,
+    "go.inlayHints.compositeLiteralTypes": false,
+    "go.inlayHints.functionTypeParameters": false,
+    "go.inlayHints.parameterNames": false,
+    "go.inlayHints.rangeVariableTypes": false,
+    "[terraform]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file"
+    },
+    "[terraform-vars]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file"
+    },
+    "errorLens.excludeBySource": [
+        "cSpell"
+    ],
+    "githubPullRequests.pullBranch": "never"
 }
