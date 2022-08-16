@@ -25,7 +25,6 @@
     ~/.gitconfig: git/.gitconfig
     ~/.gitignore_global: git/.gitignore_global
     ~/.gitattributes: git/.gitattributes
-    ~/.p10k.zsh: shell/zsh/themes/.p10k.zsh
     ~/.config/starship.toml: shell/zsh/themes/starship.toml
     ~/.zshenv: shell/zsh/.zshenv
     ~/.zshrc: shell/zsh/.zshrc
