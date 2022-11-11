@@ -13,23 +13,8 @@
       stdout: true
       stderr: true
 
-    - command: test -d ~/.oh-my-zsh || sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-      description: Installing ohmyzsh
-      stdout: true
-      stderr: true
-
     - command: which brew || bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
       description: Installing homebrew
-      stdout: true
-      stderr: true
-
-    - command: which zimfw || curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
-      description: Installing Zim
-      stdout: true
-      stderr: true
-
-    - command: zimfw install
-      description: Installing Zim modules
       stdout: true
       stderr: true
 
@@ -38,16 +23,23 @@
       stdout: true
       stderr: true
 
+    - command: |
+        while IFS= read -r line; do
+          code --install-extension $line
+        done < editors/vs-code/extensions
+      description: Install VScode extensions
+      stdout: true
+      stderr: true
+
 - link:
     ~/.gitconfig: git/.gitconfig
     ~/.gitignore_global: git/.gitignore_global
     ~/.gitattributes: git/.gitattributes
-    ~/.config/starship.toml: shell/zsh/themes/starship.toml
-    ~/.zshenv: shell/zsh/.zshenv
-    ~/.zshrc: shell/zsh/.zshrc
-    ~/.zimrc: shell/zsh/.zimrc
-    ~/.inputrc: shell/.inputrc
-    ~/Library/Application\ Support/k9s/skin.yml: shell/k9s/skin.yml
+    ~/.config/starship.toml: starship/starship.toml
+    ~/.config/neofetch: neofetch
+    ~/.zshrc: zsh/.zshrc
+    ~/.zsh: zsh
+    ~/Library/Application\ Support/k9s/skin.yml: k9s/skin.yml
     "~/Library/Application Support/Code/User/settings.json": editors/vs-code/settings.json
     "~/Library/Application Support/Code/User/keybindings.json": editors/vs-code/keybindings.json
     ~/.warp/themes: modules/themes

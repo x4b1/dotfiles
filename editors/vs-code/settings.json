@@ -2,13 +2,14 @@
     // Editor global setup
     "workbench.colorTheme": "Nord",
     "workbench.startupEditor": "none",
-    "editor.fontFamily": "SourceCodePro-regular",
+    "editor.fontFamily": "SauceCodePro Nerd Font",
     "editor.minimap.enabled": false,
     "files.insertFinalNewline": true,
     "editor.accessibilitySupport": "off",
     "editor.inlineSuggest.enabled": true,
-    "diffEditor.ignoreTrimWhitespace": false,
     "editor.bracketPairColorization.enabled": true,
+    "editor.fontSize": 14,
+    "diffEditor.ignoreTrimWhitespace": false,
     "git.autofetch": true,
     // Golang
     "go.lintTool": "golangci-lint",
@@ -25,36 +26,21 @@
     "gopls": {
         "formatting.gofumpt": true,
         "ui.navigation.importShortcut": "Definition",
+        "experimentalWorkspaceModule": true
     },
     "redhat.telemetry.enabled": false,
-    "github.copilot.enable": {
-        "*": true,
-        "yaml": true,
-        "plaintext": false,
-        "markdown": false,
-        "env": false
-    },
-    "terraform.languageServer": {
-        "external": true,
-        "args": [
-            "serve"
-        ],
-        "maxNumberOfProblems": 100,
-        "trace.server": "off"
-    },
     "vs-kubernetes": {
-        "vscode-kubernetes.helm-path.mac": "/Users/gopher/.vs-kubernetes/tools/helm/darwin-amd64/helm",
-        "vscode-kubernetes.kubectl-path.mac": "/Users/gopher/.vs-kubernetes/tools/kubectl/kubectl",
-        "vscode-kubernetes.minikube-path.mac": "/Users/gopher/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+        "vscode-kubernetes.helm-path.mac": "/Users/xabi/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+        "vscode-kubernetes.kubectl-path.mac": "/Users/xabi/.vs-kubernetes/tools/kubectl/kubectl",
+        "vscode-kubernetes.minikube-path.mac": "/Users/xabi/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+        "vs-kubernetes.crd-code-completion": "disabled"
     },
     "[dockerfile]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
-    "editor.fontSize": 14,
     "[vue]": {
         "editor.defaultFormatter": "johnsoncodehk.volar"
     },
-    "turboConsoleLog.quote": "'",
     "cSpell.language": "en-GB",
     "explorer.fileNesting.enabled": true,
     "[markdown]": {
@@ -64,11 +50,7 @@
     "git.mergeEditor": true,
     "window.commandCenter": false,
     "editor.renderWhitespace": "all",
-    "go.inlayHints.compositeLiteralFields": false,
-    "go.inlayHints.compositeLiteralTypes": false,
-    "go.inlayHints.functionTypeParameters": false,
-    "go.inlayHints.parameterNames": false,
-    "go.inlayHints.rangeVariableTypes": false,
+    // terraform
     "[terraform]": {
         "editor.defaultFormatter": "hashicorp.terraform",
         "editor.formatOnSave": true,
@@ -79,8 +61,11 @@
         "editor.formatOnSave": true,
         "editor.formatOnSaveMode": "file"
     },
+    "terraform.languageServer.enable": true,
     "errorLens.excludeBySource": [
         "cSpell"
     ],
-    "githubPullRequests.pullBranch": "never"
+    "mjml.minifyHtmlOutput": false,
+    "editor.largeFileOptimizations": false,
+    "shellcheck.executablePath": "/usr/local/bin/shellcheck"
 }

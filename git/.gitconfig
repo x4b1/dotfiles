@@ -1,5 +1,5 @@
 [user]
-	name = Xabier Martinez
+	name = Xabi
 	email = xmartinez1702@gmail.com
 	signingkey = 488F3BDD0AD7222C
 
@@ -95,9 +95,21 @@
 
 [url "ssh://git@github.com/"]
   insteadOf = https://github.com/
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
 [url "ssh://git@gitlab.com/"]
-        insteadOf = https://gitlab.com/
+	insteadOf = https://gitlab.com/
+[url "git@gitlab.com/"]
+	insteadOf = https://gitlab.com/
+
 [url "ssh://git@bitbucket.org/"]
   insteadOf = https://bitbucket.org/
-[http]
-	cookiefile = /Users/gopher/.gitcookies
+[url "git@bitbucket.org/"]
+	insteadOf = https://bitbucket.org/
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
