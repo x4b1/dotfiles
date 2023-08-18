@@ -15,7 +15,7 @@ setopt hist_ignore_dups
 setopt prompt_subst
 
 # Print the exit value of programs with non-zero exit status.
-setopt print_exit_value
+# setopt print_exit_value
 
 # On an ambiguous completion, instead of listing possibilities or beeping,
 # insert the first match immediately.

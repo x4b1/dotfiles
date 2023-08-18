@@ -1,5 +1,7 @@
-# Enable aliases to be sudo’ed
 alias sudo='sudo '
+
+alias c='clear'
+alias h='history'
 
 alias ..="cd .."
 alias ...="cd ../.."
@@ -18,15 +20,10 @@ alias k='kill -9'
 alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
 
-alias cmf='git-cmf'
-
+# Github
+alias ghw="gh browse"
 
 # Kubernetes
 alias k="kubectl"
 alias kc="kubectx"
 alias kn="kubens"
-
-# Teleport
-alias stdb='tsh proxy db --port 5432 --tunnel staging'
-alias rrdb='tsh proxy db --port 5433 --tunnel production-read-replica'
-alias pddb='tsh proxy db --port 2345 --tunnel production'

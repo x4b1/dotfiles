@@ -1,7 +1,7 @@
 [user]
 	name = Xabi
 	email = xmartinez1702@gmail.com
-	signingkey = 488F3BDD0AD7222C
+	signingkey = 37A85763366EFAEC
 
 [init]
 	defaultBranch = main
@@ -87,11 +87,11 @@
 	# Detect whitespace errors when applying a patch
 	whitespace = fix
 [commit]
-	gpgsign = false
+	gpgsign = true
 [tag]
 	gpgsign = true
 [gpg]
-	program = /usr/local/bin/gpg
+	program = gpg
 
 [url "ssh://git@github.com/"]
   insteadOf = https://github.com/

@@ -25,21 +25,21 @@
     "go.autocompleteUnimportedPackages": true,
     "gopls": {
         "formatting.gofumpt": true,
-        "ui.navigation.importShortcut": "Definition",
-        "experimentalWorkspaceModule": true
+        "ui.navigation.importShortcut": "Definition"
     },
     "redhat.telemetry.enabled": false,
     "vs-kubernetes": {
         "vscode-kubernetes.helm-path.mac": "/Users/xabi/.vs-kubernetes/tools/helm/darwin-amd64/helm",
         "vscode-kubernetes.kubectl-path.mac": "/Users/xabi/.vs-kubernetes/tools/kubectl/kubectl",
         "vscode-kubernetes.minikube-path.mac": "/Users/xabi/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-        "vs-kubernetes.crd-code-completion": "disabled"
+        "vs-kubernetes.crd-code-completion": "disabled",
+        "vs-kubernetes.minikube-show-information-expiration": "2023-10-24T07:20:32.655Z"
     },
     "[dockerfile]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
     "[vue]": {
-        "editor.defaultFormatter": "johnsoncodehk.volar"
+        "editor.defaultFormatter": "Vue.volar"
     },
     "cSpell.language": "en-GB",
     "explorer.fileNesting.enabled": true,
@@ -67,5 +67,13 @@
     ],
     "mjml.minifyHtmlOutput": false,
     "editor.largeFileOptimizations": false,
-    "shellcheck.executablePath": "/usr/local/bin/shellcheck"
+    "files.associations": {
+        "*.tmpl": "helm"
+    },
+    "[helm]": {
+
+    },
+    "editor.tabSize": 2,
+    "workbench.editor.untitled.hint": "hidden",
+    "editor.guides.bracketPairs": true
 }
