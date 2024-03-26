@@ -18,10 +18,12 @@
         "--fast",
         "--fix"
     ],
+    "go.lintOnSave": "package",
     "go.coverOnSingleTest": true,
     "go.coverOnSingleTestFile": true,
     "go.formatTool": "gofumpt",
     "go.toolsManagement.autoUpdate": true,
+    "go.useLanguageServer": true,
     "go.autocompleteUnimportedPackages": true,
     "gopls": {
         "formatting.gofumpt": true,
@@ -70,10 +72,22 @@
     "files.associations": {
         "*.tmpl": "helm"
     },
-    "[helm]": {
-
-    },
+    "[helm]": {},
     "editor.tabSize": 2,
-    "workbench.editor.untitled.hint": "hidden",
-    "editor.guides.bracketPairs": true
+    "workbench.tree.indent": 14,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.colorCustomizations": {
+        "tree.indentGuidesStroke": "#05ef3c"
+    },
+    "editor.guides.bracketPairs": true,
+    "[proto3]": {
+        "editor.defaultFormatter": "bufbuild.vscode-buf"
+    },
+    "git.confirmSync": false,
+    "diffEditor.codeLens": true,
+    "workbench.editor.empty.hint": "hidden",
+    "[sql]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "mtxr.sqltools"
+    }
 }
