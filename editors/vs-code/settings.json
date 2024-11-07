@@ -1,93 +1,118 @@
 {
-    // Editor global setup
-    "workbench.colorTheme": "Nord",
-    "workbench.startupEditor": "none",
-    "editor.fontFamily": "SauceCodePro Nerd Font",
-    "editor.minimap.enabled": false,
-    "files.insertFinalNewline": true,
-    "editor.accessibilitySupport": "off",
-    "editor.inlineSuggest.enabled": true,
-    "editor.bracketPairColorization.enabled": true,
-    "editor.fontSize": 14,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "git.autofetch": true,
-    // Golang
-    "go.lintTool": "golangci-lint",
-    "go.lintFlags": [
-        "--config=${workspaceFolder}/.golangci.yaml",
-        "--fast",
-        "--fix"
-    ],
-    "go.lintOnSave": "package",
-    "go.coverOnSingleTest": true,
-    "go.coverOnSingleTestFile": true,
-    "go.formatTool": "gofumpt",
-    "go.toolsManagement.autoUpdate": true,
-    "go.useLanguageServer": true,
-    "go.autocompleteUnimportedPackages": true,
-    "gopls": {
-        "formatting.gofumpt": true,
-        "ui.navigation.importShortcut": "Definition"
-    },
-    "redhat.telemetry.enabled": false,
-    "vs-kubernetes": {
-        "vscode-kubernetes.helm-path.mac": "/Users/xabi/.vs-kubernetes/tools/helm/darwin-amd64/helm",
-        "vscode-kubernetes.kubectl-path.mac": "/Users/xabi/.vs-kubernetes/tools/kubectl/kubectl",
-        "vscode-kubernetes.minikube-path.mac": "/Users/xabi/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-        "vs-kubernetes.crd-code-completion": "disabled",
-        "vs-kubernetes.minikube-show-information-expiration": "2023-10-24T07:20:32.655Z"
+    "[dockercompose]": {
+        "editor.autoIndent": "advanced",
+        "editor.insertSpaces": true,
+        "editor.quickSuggestions": {
+            "comments": false,
+            "other": true,
+            "strings": true
+        },
+        "editor.tabSize": 2
     },
     "[dockerfile]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
-    "[vue]": {
-        "editor.defaultFormatter": "Vue.volar"
-    },
-    "cSpell.language": "en-GB",
-    "explorer.fileNesting.enabled": true,
+    "[helm]": {},
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
-    "terminal.external.osxExec": "Warp.app",
-    "git.mergeEditor": true,
-    "window.commandCenter": false,
-    "editor.renderWhitespace": "all",
-    // terraform
-    "[terraform]": {
-        "editor.defaultFormatter": "hashicorp.terraform",
-        "editor.formatOnSave": true,
-        "editor.formatOnSaveMode": "file"
+    "[proto3]": {
+        "editor.defaultFormatter": "bufbuild.vscode-buf"
+    },
+    "[sql]": {
+        "editor.defaultFormatter": "mtxr.sqltools",
+        "editor.formatOnSave": false
     },
     "[terraform-vars]": {
         "editor.defaultFormatter": "hashicorp.terraform",
         "editor.formatOnSave": true,
         "editor.formatOnSaveMode": "file"
     },
-    "terraform.languageServer.enable": true,
+    // terraform
+    "[terraform]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    "cSpell.language": "en-GB",
+    "diffEditor.codeLens": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.accessibilitySupport": "off",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.fontFamily": "SauceCodePro Nerd Font",
+    "editor.fontSize": 14,
+    "editor.guides.bracketPairs": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.largeFileOptimizations": false,
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 2,
     "errorLens.excludeBySource": [
         "cSpell"
     ],
-    "mjml.minifyHtmlOutput": false,
-    "editor.largeFileOptimizations": false,
+    "explorer.fileNesting.enabled": true,
     "files.associations": {
-        "*.tmpl": "helm"
+        "*.tmpl": "helm",
+        "*.yml": "dockercompose"
     },
-    "[helm]": {},
-    "editor.tabSize": 2,
-    "workbench.tree.indent": 14,
-    "workbench.tree.renderIndentGuides": "always",
+    "[templ]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "a-h.templ"
+    },
+    "files.insertFinalNewline": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.mergeEditor": true,
+    "githubPullRequests.pullBranch": "never",
+    "go.coverOnSingleTest": true,
+    "go.coverOnSingleTestFile": true,
+    "go.formatTool": "gofumpt",
+    "go.lintFlags": [
+        "--config=${workspaceFolder}/.golangci.yaml",
+        "--fast",
+        "--fix"
+    ],
+    // "go.lintOnSave": "package",
+    "go.lintTool": "golangci-lint",
+    "go.toolsManagement.autoUpdate": true,
+    "go.useLanguageServer": true,
+    "gopls": {
+        "formatting.gofumpt": true,
+        "ui.navigation.importShortcut": "Definition",
+        // "ui.semanticTokens": true,
+        "verboseOutput": true
+    },
+    "mjml.minifyHtmlOutput": false,
+    "redhat.telemetry.enabled": false,
+    "redoclyOpenAPI.api.key": "sk_kw136JsPEdvhsy3sdxo0KjEVcvg=_TQpEy+I65tTCgRdXmHJjXOB0FadJTzWGDg7zSAxJOBM=",
+    "redoclyOpenAPI.api.region": "us",
+    "terminal.external.osxExec": "Warp.app",
+    "terraform.languageServer.enable": true,
+    "vs-kubernetes": {
+        "vs-kubernetes.crd-code-completion": "disabled",
+        "vs-kubernetes.minikube-show-information-expiration": "2023-10-24T07:20:32.655Z",
+        "vscode-kubernetes.helm-path.mac": "/Users/xabi/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+        "vscode-kubernetes.kubectl-path.mac": "/Users/xabi/.vs-kubernetes/tools/kubectl/kubectl",
+        "vscode-kubernetes.minikube-path.mac": "/Users/xabi/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+    },
+    "window.commandCenter": false,
     "workbench.colorCustomizations": {
         "tree.indentGuidesStroke": "#05ef3c"
     },
-    "editor.guides.bracketPairs": true,
-    "[proto3]": {
-        "editor.defaultFormatter": "bufbuild.vscode-buf"
-    },
-    "git.confirmSync": false,
-    "diffEditor.codeLens": true,
+    // Editor global setup
+    "workbench.colorTheme": "Nord",
     "workbench.editor.empty.hint": "hidden",
-    "[sql]": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "mtxr.sqltools"
+    "workbench.startupEditor": "none",
+    "workbench.tree.indent": 14,
+    "workbench.tree.renderIndentGuides": "always",
+    "editor.minimap.enabled": false,
+    "makefile.configureOnOpen": false,
+    "[mjml]": {
+        "editor.defaultFormatter": "mjmlio.vscode-mjml"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     }
 }

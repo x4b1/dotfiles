@@ -5,10 +5,6 @@
         "command": "go.test.cursor"
     },
     {
-        "key": "shift+cmd+l",
-        "command": "turboConsoleLog.uncommentAllLogMessages"
-    },
-    {
         "key": "shift+alt+u",
         "command": "-turboConsoleLog.uncommentAllLogMessages"
     }

@@ -1,3 +1,4 @@
+a-h.templ
 aaron-bond.better-comments
 adamhartford.vscode-base64
 adpyke.codesnap
@@ -9,11 +10,8 @@ bierner.markdown-mermaid
 bradlc.vscode-tailwindcss
 bufbuild.vscode-buf
 christophlipp.shruggoff
-ciarant.vscode-structurizr
-codesandbox-io.codesandbox-projects-theme
-dawhite.mustache
 eamodio.gitlens
-emeraldwalk.runonsave
+esbenp.prettier-vscode
 formulahendry.code-runner
 github.github-vscode-theme
 github.vscode-github-actions
@@ -25,6 +23,7 @@ mjmlio.vscode-mjml
 ms-azuretools.vscode-docker
 ms-kubernetes-tools.vscode-kubernetes-tools
 ms-vscode.makefile-tools
+ms-vsliveshare.vsliveshare
 mtxr.sqltools
 mtxr.sqltools-driver-pg
 netcorext.uuid-generator
@@ -33,15 +32,14 @@ oderwat.indent-rainbow
 pinage404.better-readability-extension-pack
 premparihar.gotestexplorer
 quicktype.quicktype
+redhat.vscode-xml
 redhat.vscode-yaml
 redocly.openapi-vs-code
 shardulm94.trailing-spaces
 signageos.signageos-vscode-sops
 sissel.shopify-liquid
 streetsidesoftware.code-spell-checker
-systemticks.c4-dsl-extension
 tamasfe.even-better-toml
-technosophos.vscode-helm
 tim-koehler.helm-intellisense
 tomoki1207.pdf
 tyriar.lorem-ipsum

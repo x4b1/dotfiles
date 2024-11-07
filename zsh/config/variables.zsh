@@ -44,3 +44,4 @@ export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
 # Go
 export GOPATH="$HOME/go"
 export GOBIN=$HOME/go/bin
+export GOPROXY="https://goproxy.io"

@@ -39,3 +39,5 @@ eval "$(starship init zsh)"
 # Output cool information
 # --------------------------------------
 neofetch --config ~/.config/neofetch/config
+export PATH="/usr/local/opt/libpq/bin:$PATH"
+export PATH="$(brew --prefix python)/libexec/bin:$PATH"
