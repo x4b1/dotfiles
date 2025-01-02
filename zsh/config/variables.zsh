@@ -19,7 +19,6 @@ export KUBECONFIG="$HOME/.kube/config"
 
 # Terminal config
 export WORDCHARS='*?_[]~=&;!#$%^(){}'
-export TERM="xterm-256color"
 
 # History limits
 export HISTFILE=$HOME/.zhistory
