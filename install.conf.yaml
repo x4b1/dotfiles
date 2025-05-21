@@ -36,7 +36,7 @@
     ~/.gitignore_global: git/.gitignore_global
     ~/.gitattributes: git/.gitattributes
     ~/.config/starship.toml: starship/starship.toml
-    ~/.config/neofetch: neofetch
+    ~/.config/fastfetch: fastfetch
     ~/.zshrc: zsh/.zshrc
     ~/.zsh: zsh
     ~/Library/Application\ Support/k9s: k9s

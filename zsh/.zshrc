@@ -38,6 +38,11 @@ eval "$(starship init zsh)"
 
 # Output cool information
 # --------------------------------------
-neofetch --config ~/.config/neofetch/config
+fastfetch -c ~/.config/fastfetch/config.jsonc
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 export PATH="$(brew --prefix python)/libexec/bin:$PATH"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/xabi/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions

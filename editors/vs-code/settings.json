@@ -1,4 +1,7 @@
 {
+    "[astro]": {
+        "editor.defaultFormatter": "astro-build.astro-vscode"
+    },
     "[dockercompose]": {
         "editor.autoIndent": "advanced",
         "editor.insertSpaces": true,
@@ -13,8 +16,17 @@
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
     "[helm]": {},
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "[mjml]": {
+        "editor.defaultFormatter": "mjmlio.vscode-mjml"
     },
     "[proto3]": {
         "editor.defaultFormatter": "bufbuild.vscode-buf"
@@ -23,30 +35,31 @@
         "editor.defaultFormatter": "mtxr.sqltools",
         "editor.formatOnSave": false
     },
+    "[templ]": {
+        "editor.defaultFormatter": "a-h.templ"
+    },
     "[terraform-vars]": {
-        "editor.defaultFormatter": "hashicorp.terraform",
-        "editor.formatOnSave": true,
-        "editor.formatOnSaveMode": "file"
+        "editor.defaultFormatter": "hashicorp.terraform"
     },
     // terraform
     "[terraform]": {
-        "editor.defaultFormatter": "hashicorp.terraform",
-        "editor.formatOnSave": true,
-        "editor.formatOnSaveMode": "file"
+        "editor.defaultFormatter": "hashicorp.terraform"
     },
     "[vue]": {
         "editor.defaultFormatter": "Vue.volar"
     },
-    "cSpell.language": "en-GB",
     "diffEditor.codeLens": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.accessibilitySupport": "off",
     "editor.bracketPairColorization.enabled": true,
     "editor.fontFamily": "SauceCodePro Nerd Font",
     "editor.fontSize": 14,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
     "editor.guides.bracketPairs": true,
     "editor.inlineSuggest.enabled": true,
     "editor.largeFileOptimizations": false,
+    "editor.minimap.enabled": false,
     "editor.renderWhitespace": "all",
     "editor.tabSize": 2,
     "errorLens.excludeBySource": [
@@ -57,25 +70,33 @@
         "*.tmpl": "helm",
         "*.yml": "dockercompose"
     },
-    "[templ]": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "a-h.templ"
-    },
     "files.insertFinalNewline": true,
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.mergeEditor": true,
     "githubPullRequests.pullBranch": "never",
+    "go.alternateTools": {
+        "customFormatter": "golangci-lint-v2"
+    },
     "go.coverOnSingleTest": true,
     "go.coverOnSingleTestFile": true,
-    "go.formatTool": "gofumpt",
-    "go.lintFlags": [
-        "--config=${workspaceFolder}/.golangci.yaml",
-        "--fast",
-        "--fix"
+    "go.editorContextMenuCommands": {
+        "fillStruct": true
+    },
+    "go.formatFlags": [
+        "fmt",
+        "--stdin"
     ],
-    // "go.lintOnSave": "package",
-    "go.lintTool": "golangci-lint",
+    "go.formatTool": "custom",
+    "go.inlayHints.compositeLiteralFields": true,
+    "go.inlayHints.parameterNames": true,
+    "go.lintFlags": [
+        "--path-mode=abs",
+        "--config=${workspaceFolder}/.golangci.yaml",
+        "--fast-only"
+    ],
+    "go.lintOnSave": "file",
+    "go.lintTool": "golangci-lint-v2",
     "go.toolsManagement.autoUpdate": true,
     "go.useLanguageServer": true,
     "gopls": {
@@ -84,10 +105,9 @@
         // "ui.semanticTokens": true,
         "verboseOutput": true
     },
+    "makefile.configureOnOpen": false,
     "mjml.minifyHtmlOutput": false,
     "redhat.telemetry.enabled": false,
-    "redoclyOpenAPI.api.key": "sk_kw136JsPEdvhsy3sdxo0KjEVcvg=_TQpEy+I65tTCgRdXmHJjXOB0FadJTzWGDg7zSAxJOBM=",
-    "redoclyOpenAPI.api.region": "us",
     "terminal.external.osxExec": "Warp.app",
     "terraform.languageServer.enable": true,
     "vs-kubernetes": {
@@ -101,18 +121,10 @@
     "workbench.colorCustomizations": {
         "tree.indentGuidesStroke": "#05ef3c"
     },
-    // Editor global setup
-    "workbench.colorTheme": "Nord",
     "workbench.editor.empty.hint": "hidden",
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 14,
     "workbench.tree.renderIndentGuides": "always",
-    "editor.minimap.enabled": false,
-    "makefile.configureOnOpen": false,
-    "[mjml]": {
-        "editor.defaultFormatter": "mjmlio.vscode-mjml"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    }
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "catppuccin-mocha"
 }

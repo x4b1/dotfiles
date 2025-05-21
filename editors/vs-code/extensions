@@ -5,12 +5,17 @@ adamhartford.vscode-base64
 adpyke.codesnap
 adpyke.vscode-sql-formatter
 aldijav.golangwithdidi
+anseki.vscode-color
 arcticicestudio.nord-visual-studio-code
 astro-build.astro-vscode
 bierner.markdown-mermaid
 bradlc.vscode-tailwindcss
 bufbuild.vscode-buf
+catppuccin.catppuccin-vsc
+catppuccin.catppuccin-vsc-icons
+catppuccin.catppuccin-vsc-pack
 christophlipp.shruggoff
+docker.docker
 eamodio.gitlens
 esbenp.prettier-vscode
 formulahendry.code-runner
@@ -19,7 +24,7 @@ github.vscode-github-actions
 github.vscode-pull-request-github
 golang.go
 hashicorp.terraform
-likec4.likec4-vscode
+inlang.vs-code-extension
 mjmlio.vscode-mjml
 ms-azuretools.vscode-docker
 ms-kubernetes-tools.vscode-kubernetes-tools
@@ -31,6 +36,7 @@ netcorext.uuid-generator
 nhoizey.gremlins
 oderwat.indent-rainbow
 pinage404.better-readability-extension-pack
+pomdtr.excalidraw-editor
 premparihar.gotestexplorer
 quicktype.quicktype
 redhat.vscode-xml
