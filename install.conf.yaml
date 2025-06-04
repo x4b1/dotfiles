@@ -36,13 +36,12 @@
     ~/.gitignore_global: git/.gitignore_global
     ~/.gitattributes: git/.gitattributes
     ~/.config/starship.toml: starship/starship.toml
-    ~/.config/fastfetch: fastfetch
     ~/.zshrc: zsh/.zshrc
     ~/.zsh: zsh
     ~/Library/Application\ Support/k9s: k9s
     "~/Library/Application Support/Code/User/settings.json": editors/vs-code/settings.json
     "~/Library/Application Support/Code/User/keybindings.json": editors/vs-code/keybindings.json
-    ~/.warp/themes: modules/themes
+    ~/.config/fastfetch/config.jsonc: fastfetch/config.jsonc
 
 - create:
     - ~/Projects

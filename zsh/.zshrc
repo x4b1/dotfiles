@@ -7,6 +7,15 @@ source $ZPLUG_HOME/init.zsh
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "plugins/git", from:oh-my-zsh
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install zplug plugins? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
 zplug load
 
 # Configuration

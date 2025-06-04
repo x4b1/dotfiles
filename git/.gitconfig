@@ -1,7 +1,7 @@
 [user]
 	name = Xabi
 	email = 6052966+x4b1@users.noreply.github.com
-	signingkey = 2F3220DBCE5C60D2
+	# signingkey = 2F3220DBCE5C60D2
 
 [init]
 	defaultBranch = main
@@ -87,9 +87,9 @@
 	# Detect whitespace errors when applying a patch
 	whitespace = fix
 [commit]
-	gpgsign = true
+	# gpgsign = true
 [tag]
-	gpgsign = true
+	# gpgsign = true
 [gpg]
 	program = gpg
 

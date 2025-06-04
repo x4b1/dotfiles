@@ -23,6 +23,3 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 source <(kubectl completion zsh)
 
-source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-
