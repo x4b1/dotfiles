@@ -1,0 +1,16 @@
+# Font configuration:
+font-family = "SauceCodePro Nerd Font"
+font-family-italic = "Cartograph CF Italic"
+adjust-cell-width = -5%
+adjust-cell-height = 20%
+adjust-underline-position = 6
+adjust-underline-thickness = 40%
+adjust-cursor-thickness = 150%
+
+# Color theme:
+theme = catppuccin-macchiato
+
+macos-window-shadow = false
+quit-after-last-window-closed = true
+
+mouse-hide-while-typing = true

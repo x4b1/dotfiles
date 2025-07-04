@@ -1,0 +1,92 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+    "ui_font_size": 14,
+    "buffer_font_size": 14,
+    "tab_size": 4,
+    "theme": {
+        "mode": "dark",
+        "dark": "Catppuccin Macchiato",
+        "light": "Catppuccin Latte"
+    },
+    "auto_indent_on_paste": true,
+    "auto_update": true,
+    "icon_theme": "Catppuccin Macchiato",
+    "ui_font_family": "SauceCodePro Nerd Font",
+    "buffer_font_family": "SauceCodePro Nerd Font",
+    "hour_format": "hour24",
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "diagnostics": {
+        "include_warnings": true,
+        "inline": {
+            "enabled": false,
+            "max_severity": null,
+            "min_column": 90,
+            "padding": 4,
+            "update_debounce_ms": 150
+        }
+    },
+    "enable_language_server": true,
+    "ensure_final_newline_on_save": true,
+    "active_pane_modifiers": {
+        "magnification": 1.5
+    },
+    "format_on_save": "on",
+    "formatter": "auto",
+    "base_keymap": "VSCode",
+    "indent_guides": {
+        "enabled": true,
+        "coloring": "indent_aware"
+    },
+    // File syntax highlighting
+    "file_types": {
+        "Dockerfile": ["Dockerfile", "Dockerfile.*"],
+        "JSON": ["json", "jsonc", "*.code-snippets"]
+    },
+    "languages": {
+        "Go": {
+            "inlay_hints": {
+                "enabled": true
+            },
+            "formatter": "language_server",
+            "hard_tabs": true,
+            "language_servers": ["gopls", "golangci-lint"]
+        }
+    },
+    "lsp": {
+        "gopls": {
+            "initialization_options": {
+                "hints": {
+                    "assignVariableTypes": true,
+                    "compositeLiteralFields": true,
+                    "compositeLiteralTypes": true,
+                    "constantValues": true,
+                    "functionTypeParameters": true,
+                    "parameterNames": true,
+                    "rangeVariableTypes": true
+                }
+            }
+        },
+        "golangci-lint": {
+            "initialization_options": {
+                "command": [
+                    "golangci-lint",
+                    "run",
+                    "--output.json.path",
+                    "stdout",
+                    "--issues-exit-code=1",
+                    "--show-stats=false"
+                ]
+            }
+        }
+    }
+}

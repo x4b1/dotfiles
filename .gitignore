@@ -1,2 +1,11 @@
 /.vscode
 */cache
+
+# Zed added files.
+/.config/zed/conversations
+/.config/zed/prompts
+/.config/zed/themes
+
+# Zsh cache files.
+.zsh_history
+*/.zcompdump

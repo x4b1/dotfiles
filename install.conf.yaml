@@ -9,7 +9,7 @@
 
 - shell:
     - command: git submodule update --init --recursive
-      description:  Installing submodules
+      description: Installing submodules
       stdout: true
       stderr: true
 
@@ -32,16 +32,10 @@
       stderr: true
 
 - link:
-    ~/.gitconfig: git/.gitconfig
-    ~/.gitignore_global: git/.gitignore_global
-    ~/.gitattributes: git/.gitattributes
-    ~/.config/starship.toml: starship/starship.toml
-    ~/.zshrc: zsh/.zshrc
-    ~/.zsh: zsh
-    ~/Library/Application\ Support/k9s: k9s
-    "~/Library/Application Support/Code/User/settings.json": editors/vs-code/settings.json
-    "~/Library/Application Support/Code/User/keybindings.json": editors/vs-code/keybindings.json
-    ~/.config/fastfetch/config.jsonc: fastfetch/config.jsonc
+    ~/.config: .config
+    ~/.zshenv: .zshenv
+    "~/Library/Application Support/Code/User/settings.json": .config/vscode/settings.json
+    "~/Library/Application Support/Code/User/keybindings.json": .config/vscode/keybindings.json
 
 - create:
     - ~/Projects

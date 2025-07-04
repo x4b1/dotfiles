@@ -20,14 +20,14 @@ zplug load
 
 # Configuration
 # --------------------------------------
-source $HOME/.zsh/config/options.zsh
-source $HOME/.zsh/config/completions.zsh
-source $HOME/.zsh/config/variables.zsh
-source $HOME/.zsh/config/aliases.zsh
-source $HOME/.zsh/config/bindings.zsh
-source $HOME/.zsh/config/syntax-highlighting.zsh
-source $HOME/.zsh/config/suggestions.zsh
-source $HOME/.zsh/config/hooks.zsh
+source $ZDOTDIR/config/options.zsh
+source $ZDOTDIR/config/completions.zsh
+source $ZDOTDIR/config/variables.zsh
+source $ZDOTDIR/config/aliases.zsh
+source $ZDOTDIR/config/bindings.zsh
+source $ZDOTDIR/config/syntax-highlighting.zsh
+source $ZDOTDIR/config/suggestions.zsh
+source $ZDOTDIR/config/hooks.zsh
 
 # Explicit machine configuration
 # --------------------------------------

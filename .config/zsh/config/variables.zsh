@@ -12,13 +12,13 @@ export path=(
   "/sbin"
 )
 
-# User config directory
-export XDG_CONFIG_HOME="$HOME/Library/Application\ Support"
-
 export KUBECONFIG="$HOME/.kube/config"
 
 # Terminal config
 export WORDCHARS='*?_[]~=&;!#$%^(){}'
+
+# Disable Apple's save/restore mechanism.
+export SHELL_SESSIONS_DISABLE=1
 
 # History limits
 export HISTFILE=$HOME/.zhistory
