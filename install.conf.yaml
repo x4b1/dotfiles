@@ -18,7 +18,7 @@
       stdout: true
       stderr: true
 
-    - command: brew bundle --file brew/Brewfile
+    - command: brew bundle --file Brewfile
       description: Installing brew packages
       stdout: true
       stderr: true
@@ -26,7 +26,7 @@
     - command: |
         while IFS= read -r line; do
           code --install-extension $line
-        done < editors/vs-code/extensions
+        done < .config/vscode/extensions
       description: Install VScode extensions
       stdout: true
       stderr: true
