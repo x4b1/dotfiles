@@ -11,7 +11,9 @@
 # Zsh
 .zsh_sessions
 .zsh_history
-.zcompdump
+*/.zcompdump
 
 # Raycast
 .config/raycast/extensions
+
+/.config/.wrangler
