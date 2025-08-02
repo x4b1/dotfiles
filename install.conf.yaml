@@ -8,6 +8,10 @@
 - clean: ["~"]
 
 - shell:
+    - command: sh setup_mac.sh
+      description: Running setup script for macOS
+      stdout: true
+      stderr: true
     - command: git submodule update --init --recursive
       description: Installing submodules
       stdout: true
