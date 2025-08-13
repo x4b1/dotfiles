@@ -3,17 +3,23 @@
 /.vscode
 */cache
 
-# Zed
-/.config/zed/conversations
-/.config/zed/prompts
-/.config/zed/themes
-
 # Zsh
 .zsh_sessions
 .zsh_history
 .zcompdump
 
-# Raycast
-.config/raycast/extensions
 
-/.config/.wrangler
+# ignore everything and allow one by one
+/.config/
+
+!.config/dlv/*
+!.config/fastfetch/*
+!.config/gh/*
+!.config/ghostty/*
+!.config/git/*
+!.config/k9s/*
+!.config/vscode/*
+!.config/zed/keymap.json
+!.config/zed/settings.json
+!.config/zsh/*
+!.config/starship.toml

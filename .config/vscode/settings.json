@@ -32,7 +32,7 @@
         "editor.defaultFormatter": "bufbuild.vscode-buf"
     },
     "[sql]": {
-        "editor.defaultFormatter": "mtxr.sqltools",
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
         "editor.formatOnSave": false
     },
     "[toml]": {
@@ -86,11 +86,6 @@
     "go.editorContextMenuCommands": {
         "fillStruct": true
     },
-    "go.formatFlags": [
-        "fmt",
-        "--stdin"
-    ],
-    "go.formatTool": "custom",
     "go.inlayHints.compositeLiteralFields": true,
     "go.inlayHints.parameterNames": true,
     "go.lintFlags": [
@@ -113,13 +108,6 @@
     "redhat.telemetry.enabled": false,
     "terminal.external.osxExec": "Warp.app",
     "terraform.languageServer.enable": true,
-    "vs-kubernetes": {
-        "vs-kubernetes.crd-code-completion": "disabled",
-        "vs-kubernetes.minikube-show-information-expiration": "2023-10-24T07:20:32.655Z",
-        "vscode-kubernetes.helm-path.mac": "/Users/xabi/.vs-kubernetes/tools/helm/darwin-amd64/helm",
-        "vscode-kubernetes.kubectl-path.mac": "/Users/xabi/.vs-kubernetes/tools/kubectl/kubectl",
-        "vscode-kubernetes.minikube-path.mac": "/Users/xabi/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-    },
     "window.commandCenter": false,
     "workbench.colorCustomizations": {
         "tree.indentGuidesStroke": "#05ef3c"
@@ -130,9 +118,11 @@
     "workbench.tree.renderIndentGuides": "always",
     "workbench.colorTheme": "Catppuccin Macchiato",
     "workbench.iconTheme": "catppuccin-macchiato",
-    "sherlock.userId": "596b1716-3c81-49b7-9b55-2757f1f9e8be",
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "docker.extension.enableComposeLanguageServer": false
+    "docker.extension.enableComposeLanguageServer": false,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

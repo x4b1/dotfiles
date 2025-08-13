@@ -40,7 +40,7 @@
     "active_pane_modifiers": {
         "magnification": 1.5
     },
-    "format_on_save": "on",
+    "format_on_save": "language_server",
     "formatter": "auto",
     "base_keymap": "VSCode",
     "indent_guides": {
