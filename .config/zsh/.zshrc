@@ -47,7 +47,10 @@ eval "$(starship init zsh)"
 
 # Output cool information
 # --------------------------------------
-fastfetch -c ~/.config/fastfetch/config.jsonc
+# Only run fastfetch if not in an IDE terminal
+if [[ -z "$VSCODE_INJECTION" && -z "$TERM_PROGRAM" ]]; then
+    fastfetch -c ~/.config/fastfetch/config.jsonc
+fi
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 export PATH="$(brew --prefix python)/libexec/bin:$PATH"
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.

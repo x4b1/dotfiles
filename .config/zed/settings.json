@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+    "title_bar": {
+        "show_branch_icon": true
+    },
     "ui_font_size": 14,
     "buffer_font_size": 14,
     "tab_size": 4,
@@ -20,10 +23,13 @@
     "icon_theme": "Catppuccin Macchiato",
     "ui_font_family": "SauceCodePro Nerd Font",
     "buffer_font_family": "SauceCodePro Nerd Font",
-    "hour_format": "hour24",
     "telemetry": {
         "diagnostics": false,
         "metrics": false
+    },
+    "terminal": {
+        "font_family": "SauceCodePro Nerd Font",
+        "font_size": 12
     },
     "diagnostics": {
         "include_warnings": true,
@@ -37,10 +43,7 @@
     },
     "enable_language_server": true,
     "ensure_final_newline_on_save": true,
-    "active_pane_modifiers": {
-        "magnification": 1.5
-    },
-    "format_on_save": "language_server",
+    "format_on_save": "on",
     "formatter": "auto",
     "base_keymap": "VSCode",
     "indent_guides": {
@@ -71,7 +74,7 @@
                     "compositeLiteralTypes": true,
                     "constantValues": true,
                     "functionTypeParameters": true,
-                    "parameterNames": true,
+                    "parameterNames": false,
                     "rangeVariableTypes": true
                 }
             }

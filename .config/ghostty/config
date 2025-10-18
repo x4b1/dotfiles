@@ -8,7 +8,7 @@ adjust-underline-thickness = 40%
 adjust-cursor-thickness = 150%
 
 # Color theme:
-theme = catppuccin-macchiato
+theme = Catppuccin Macchiato
 
 macos-window-shadow = false
 quit-after-last-window-closed = true

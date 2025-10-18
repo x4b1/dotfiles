@@ -24,6 +24,7 @@ github.vscode-github-actions
 github.vscode-pull-request-github
 golang.go
 hashicorp.terraform
+imgildev.vscode-code-log-plus
 mjmlio.vscode-mjml
 ms-azuretools.vscode-containers
 ms-vscode-remote.remote-containers
@@ -35,6 +36,7 @@ oderwat.indent-rainbow
 oxc.oxc-vscode
 pascalreitermann93.vscode-yaml-sort
 pinage404.better-readability-extension-pack
+pomdtr.excalidraw-editor
 quicktype.quicktype
 redhat.vscode-xml
 redhat.vscode-yaml

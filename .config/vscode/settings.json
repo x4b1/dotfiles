@@ -4,6 +4,7 @@
     },
     "[dockercompose]": {
         "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml",
         "editor.insertSpaces": true,
         "editor.quickSuggestions": {
             "comments": false,
@@ -13,9 +14,17 @@
         "editor.tabSize": 2
     },
     "[dockerfile]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+        "editor.defaultFormatter": "docker.docker"
     },
-    "[helm]": {},
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -35,9 +44,6 @@
         "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
         "editor.formatOnSave": false
     },
-    "[toml]": {
-        "editor.formatOnSave": false
-    },
     "[templ]": {
         "editor.defaultFormatter": "a-h.templ"
     },
@@ -48,11 +54,15 @@
     "[terraform]": {
         "editor.defaultFormatter": "hashicorp.terraform"
     },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[vue]": {
         "editor.defaultFormatter": "Vue.volar"
     },
     "diffEditor.codeLens": true,
     "diffEditor.ignoreTrimWhitespace": false,
+    "docker.extension.enableComposeLanguageServer": false,
     "editor.accessibilitySupport": "off",
     "editor.bracketPairColorization.enabled": true,
     "editor.fontFamily": "SauceCodePro Nerd Font",
@@ -64,7 +74,6 @@
     "editor.largeFileOptimizations": false,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "all",
-    "editor.tabSize": 2,
     "errorLens.excludeBySource": [
         "cSpell"
     ],
@@ -77,6 +86,7 @@
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.mergeEditor": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
     "githubPullRequests.pullBranch": "never",
     "go.alternateTools": {
         "customFormatter": "golangci-lint-v2"
@@ -106,23 +116,16 @@
     "makefile.configureOnOpen": false,
     "mjml.minifyHtmlOutput": false,
     "redhat.telemetry.enabled": false,
-    "terminal.external.osxExec": "Warp.app",
+    "terminal.external.osxExec": "Ghostty.app",
     "terraform.languageServer.enable": true,
     "window.commandCenter": false,
     "workbench.colorCustomizations": {
         "tree.indentGuidesStroke": "#05ef3c"
     },
+    "workbench.colorTheme": "Catppuccin Macchiato",
     "workbench.editor.empty.hint": "hidden",
+    "workbench.iconTheme": "catppuccin-macchiato",
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 14,
-    "workbench.tree.renderIndentGuides": "always",
-    "workbench.colorTheme": "Catppuccin Macchiato",
-    "workbench.iconTheme": "catppuccin-macchiato",
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "docker.extension.enableComposeLanguageServer": false,
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    "workbench.tree.renderIndentGuides": "always"
 }
