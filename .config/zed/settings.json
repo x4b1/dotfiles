@@ -7,6 +7,17 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+    "vim_mode": false,
+    "agent": {
+        "always_allow_tool_actions": true,
+        "default_model": {
+            "provider": "copilot_chat",
+            "model": "claude-sonnet-4.5"
+        }
+    },
+    "features": {
+        "edit_prediction_provider": "copilot"
+    },
     "title_bar": {
         "show_branch_icon": true
     },
@@ -89,6 +100,12 @@
                     "--issues-exit-code=1",
                     "--show-stats=false"
                 ]
+            }
+        },
+        "protobuf-language-server": {
+            "binary": {
+                "path": "buf",
+                "arguments": ["beta", "lsp"]
             }
         }
     }
