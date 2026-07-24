@@ -23,7 +23,7 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
@@ -80,7 +80,8 @@
     "explorer.fileNesting.enabled": true,
     "files.associations": {
         "*.tmpl": "helm",
-        "*.yml": "dockercompose"
+        "*.yml": "dockercompose",
+        "*.prompt": "markdown"
     },
     "files.insertFinalNewline": true,
     "git.autofetch": true,
@@ -100,7 +101,7 @@
     "go.inlayHints.parameterNames": true,
     "go.lintFlags": [
         "--path-mode=abs",
-        "--config=${workspaceFolder}/.golangci.yaml",
+        "--config=${workspaceFolder}/.golangci.yml",
         "--fast-only"
     ],
     "go.lintOnSave": "file",
@@ -127,5 +128,32 @@
     "workbench.iconTheme": "catppuccin-macchiato",
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 14,
-    "workbench.tree.renderIndentGuides": "always"
+    "workbench.tree.renderIndentGuides": "always",
+    "editor.detectIndentation": false,
+    "chat.tools.terminal.autoApprove": {
+        "pnpm": true
+    },
+    "claudeCode.preferredLocation": "panel",
+    "terminal.integrated.shellIntegration.environmentReporting": true,
+    "chat.useAgentSkills": true,
+    "chat.viewSessions.orientation": "stacked",
+    "js/ts.updateImportsOnFileMove.enabled": "always",
+    "yaml.disableSchemaDetection": [
+        "**/.github/workflows/*.yml",
+        "**/.github/workflows/*.yaml",
+        "**/.gitea/workflows/*.yml",
+        "**/.gitea/workflows/*.yaml",
+        "**/.forgejo/workflows/*.yml",
+        "**/.forgejo/workflows/*.yaml"
+    ],
+    "json.schemaDownload.trustedDomains": {
+        "https://schemastore.azurewebsites.net/": true,
+        "https://raw.githubusercontent.com/microsoft/vscode/": true,
+        "https://raw.githubusercontent.com/devcontainers/spec/": true,
+        "https://www.schemastore.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://json-schema.org/": true,
+        "https://developer.microsoft.com/json-schemas/": true,
+        "https://biomejs.dev": true
+    }
 }

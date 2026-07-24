@@ -7,106 +7,170 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-    "vim_mode": false,
-    "agent": {
-        "always_allow_tool_actions": true,
-        "default_model": {
-            "provider": "copilot_chat",
-            "model": "claude-sonnet-4.5"
-        }
+  "cli_default_open_behavior": "existing_window",
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+      "default_model": "sonnet",
     },
-    "features": {
-        "edit_prediction_provider": "copilot"
+  },
+  "context_servers": {
+    "mcp-server-context7": {
+      "enabled": true,
+      "settings": {
+        "context7_api_key": "ctx7sk-4087a43b-470d-41ee-ba44-b93049dd5215",
+      },
     },
-    "title_bar": {
-        "show_branch_icon": true
+    "mastra-docs": {
+      "enabled": false,
+      "command": "npx",
+      "args": ["-y", "@mastra/mcp-docs-server"],
     },
-    "ui_font_size": 14,
-    "buffer_font_size": 14,
-    "tab_size": 4,
-    "theme": {
-        "mode": "dark",
-        "dark": "Catppuccin Macchiato",
-        "light": "Catppuccin Latte"
+  },
+  "vim_mode": false,
+  "agent": {
+    "dock": "right",
+    "tool_permissions": {
+      "default": "allow",
     },
-    "auto_indent_on_paste": true,
-    "auto_update": true,
-    "icon_theme": "Catppuccin Macchiato",
-    "ui_font_family": "SauceCodePro Nerd Font",
-    "buffer_font_family": "SauceCodePro Nerd Font",
-    "telemetry": {
-        "diagnostics": false,
-        "metrics": false
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4.5",
     },
-    "terminal": {
-        "font_family": "SauceCodePro Nerd Font",
-        "font_size": 12
+  },
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
+  "tab_size": 2,
+  "theme": "Catppuccin Macchiato",
+  "auto_indent_on_paste": true,
+  "auto_update": true,
+  "icon_theme": "Catppuccin Macchiato",
+  "ui_font_family": "SauceCodePro Nerd Font",
+  "buffer_font_family": "SauceCodePro Nerd Font",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "terminal": {
+    "font_family": "SauceCodePro Nerd Font",
+    "font_size": 12,
+  },
+  "diagnostics": {
+    "include_warnings": true,
+    "inline": {
+      "enabled": false,
+      "max_severity": null,
+      "min_column": 90,
+      "padding": 4,
+      "update_debounce_ms": 150,
     },
-    "diagnostics": {
-        "include_warnings": true,
-        "inline": {
-            "enabled": false,
-            "max_severity": null,
-            "min_column": 90,
-            "padding": 4,
-            "update_debounce_ms": 150
-        }
-    },
-    "enable_language_server": true,
-    "ensure_final_newline_on_save": true,
-    "format_on_save": "on",
-    "formatter": "auto",
-    "base_keymap": "VSCode",
-    "indent_guides": {
+  },
+  "enable_language_server": true,
+  "ensure_final_newline_on_save": true,
+  "format_on_save": "off",
+  "formatter": "auto",
+  "base_keymap": "VSCode",
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware",
+  },
+  // File syntax highlighting
+  "file_types": {
+    "Dockerfile": ["Dockerfile", "Dockerfile.*"],
+    "JSON": ["json", "jsonc", "*.code-snippets"],
+    "Markdown": ["prompt"],
+  },
+  "languages": {
+    "Go": {
+      "inlay_hints": {
         "enabled": true,
-        "coloring": "indent_aware"
+      },
+      "formatter": "language_server",
+      "hard_tabs": true,
+      "language_servers": ["gopls", "golangci-lint"],
     },
-    // File syntax highlighting
-    "file_types": {
-        "Dockerfile": ["Dockerfile", "Dockerfile.*"],
-        "JSON": ["json", "jsonc", "*.code-snippets"]
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+      "prettier": {
+        "use": false,
+      },
+      "formatter": [],
+      "format_on_save": "on",
     },
-    "languages": {
-        "Go": {
-            "inlay_hints": {
-                "enabled": true
-            },
-            "formatter": "language_server",
-            "hard_tabs": true,
-            "language_servers": ["gopls", "golangci-lint"]
-        }
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+      "prettier": {
+        "use": false,
+      },
+      "formatter": [],
+      "format_on_save": "on",
     },
-    "lsp": {
-        "gopls": {
-            "initialization_options": {
-                "hints": {
-                    "assignVariableTypes": true,
-                    "compositeLiteralFields": true,
-                    "compositeLiteralTypes": true,
-                    "constantValues": true,
-                    "functionTypeParameters": true,
-                    "parameterNames": false,
-                    "rangeVariableTypes": true
-                }
-            }
+    "Markdown": {
+      "format_on_save": "off",
+    },
+  },
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
         },
-        "golangci-lint": {
-            "initialization_options": {
-                "command": [
-                    "golangci-lint",
-                    "run",
-                    "--output.json.path",
-                    "stdout",
-                    "--issues-exit-code=1",
-                    "--show-stats=false"
-                ]
-            }
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
         },
-        "protobuf-language-server": {
-            "binary": {
-                "path": "buf",
-                "arguments": ["beta", "lsp"]
-            }
-        }
-    }
+      },
+      "enable_lsp_tasks": true,
+    },
+    "gopls": {
+      "initialization_options": {
+        "hints": {
+          "assignVariableTypes": true,
+          "compositeLiteralFields": true,
+          "compositeLiteralTypes": true,
+          "constantValues": true,
+          "functionTypeParameters": true,
+          "parameterNames": false,
+          "rangeVariableTypes": true,
+        },
+      },
+    },
+    "golangci-lint": {
+      "initialization_options": {
+        "command": [
+          "golangci-lint",
+          "run",
+          "--output.json.path",
+          "stdout",
+          "--issues-exit-code=1",
+          "--show-stats=false",
+        ],
+      },
+    },
+    "protobuf-language-server": {
+      "binary": {
+        "path": "buf",
+        "arguments": ["beta", "lsp"],
+      },
+    },
+  },
 }

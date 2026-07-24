@@ -45,6 +45,8 @@ eval "$(fnm env)"
 # Starship
 eval "$(starship init zsh)"
 
+eval "$(fnm env --use-on-cd --shell zsh)"
+
 # Output cool information
 # --------------------------------------
 # Only run fastfetch if not in an IDE terminal
@@ -58,3 +60,16 @@ fpath=(/Users/xabi/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+# bun completions
+[ -s "/Users/xabi/.bun/_bun" ] && source "/Users/xabi/.bun/_bun"
+
+. "$HOME/.local/share/../bin/env"
+
+# pnpm
+export PNPM_HOME="/Users/xabi/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
